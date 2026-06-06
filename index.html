@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" href="logo2.png">
+</head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soporte técnico de Hatodigital</title>
+    
     <style>
         :root {
             --primary-blue: #0066cc;
@@ -64,7 +68,7 @@
         }
 
         button, .btn-link {
-            background-color: #ffffff;
+            background-color: #ffffffe4;
             color: var(--primary-blue);
             border: 2px solid var(--primary-blue);
             padding: 12px 24px;
@@ -136,7 +140,7 @@
             <div class="btn-group">
                 <button onclick="navegar('seccion-error')">Reportar Error</button>
                 <button onclick="navegar('seccion-ayuda')">manual de usurio</button>
-                <button onclick="navegar('seccion-contacto')"">Contactanos para mas informacion</button>
+                <button onclick="navegar('seccion-contacto')">Contactanos para mas informacion</button>
             </div>
         </div>
 
@@ -187,9 +191,13 @@
 
         <div id="seccion-contacto" class="section">
             <h2>Contactos</h2>
+            <button class="btn-secondary" onclick="navegar('menu-principal')">Volver al Inicio</button>
         </div>
 
     </div>
+<body>
+    <img src="logo2.png" alt="Soporte hato_digital" width="500" height="500">
+</body>
 
     <script>
         // Función simple para cambiar entre secciones
