@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario - Hato Digital</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 24px; color: #2D3748; background: #F7F9F6; max-width: 800px; margin: auto; }
+        h1 { color: #1A365D; font-size: 26px; text-align: center; border-bottom: 2px solid #1A365D; padding-bottom: 10px; }
+        h2 { color: #1A365D; font-size: 18px; margin-top: 28px; }
+        h3 { color: #2D6A4F; font-size: 15px; margin-top: 16px; }
+        p { font-size: 14px; line-height: 1.6; }
+        ul { font-size: 14px; line-height: 1.8; }
+        .tip { background: #EBF8FF; border-left: 4px solid #1A365D; padding: 10px; margin: 10px 0; border-radius: 4px; }
+        .warning { background: #FFF3E0; border-left: 4px solid #DD6B20; padding: 10px; margin: 10px 0; border-radius: 4px; }
+        .section { background: #FFFFFF; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .footer { text-align: center; color: #888; font-size: 12px; margin-top: 30px; }
+
+        @media print {
+            body { background: white; }
+            .section { box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Manual de Usuario<br>Hato Digital</h1>
+    <p style="text-align:center;color:#888;">Version 1.0</p>
+
+    <div class="section">
+        <h2>Introduccion</h2>
+        <p>Hato Digital es una aplicacion para la gestion de ganado bovino. Permite registrar animales, produccion de leche, vacunas y nacimientos de forma organizada y accesible desde tu celular.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. Primeros Pasos</h2>
+        <h3>Crear una cuenta</h3>
+        <ul>
+            <li>Abre la app y toca <b>Registrate aqui</b></li>
+            <li>Ingresa tu correo electronico y una contrasena de minimo 6 caracteres</li>
+            <li>Confirma la contrasena y toca <b>Crear Cuenta</b></li>
+            <li>Inicia sesion con tu correo y contrasena</li>
+        </ul>
+        <div class="tip">Tu cuenta funciona en cualquier dispositivo. Tus datos quedan guardados en la nube.</div>
+    </div>
+
+    <div class="section">
+        <h2>2. Inventario de Animales</h2>
+        <p>El inventario es lo primero que debes configurar antes de usar las demas funciones.</p>
+        <h3>Agregar un animal</h3>
+        <ul>
+            <li>Toca el boton <b>Inventario</b> en el dashboard</li>
+            <li>Toca el boton <b>+</b> en la esquina inferior derecha</li>
+            <li>Ingresa el numero de arete (obligatorio)</li>
+            <li>Completa nombre, raza, sexo y fecha de nacimiento</li>
+            <li>Toca <b>Guardar</b></li>
+        </ul>
+        <h3>Etapas del animal</h3>
+        <p>La app clasifica automaticamente cada animal segun su edad y sexo:</p>
+        <ul>
+            <li><b>Hembras:</b> Becerra (0-1 año), Mauta (1-2 años), Novilla (2-4 años), Vaca (+4 años)</li>
+            <li><b>Machos:</b> Becerro (0-1 año), Maute (1-2 años), Toro (+2 años)</li>
+        </ul>
+        <h3>Editar o eliminar un animal</h3>
+        <ul>
+            <li>Toca la tarjeta del animal</li>
+            <li>Selecciona <b>Editar</b> para modificar los datos</li>
+            <li>Selecciona <b>Eliminar</b> si el animal fue vendido o murio</li>
+        </ul>
+        <div class="warning">Debes agregar los animales al inventario antes de registrar leche, vacunas o nacimientos.</div>
+    </div>
+
+    <div class="section">
+        <h2>3. Produccion de Leche</h2>
+        <h3>Anotar leche</h3>
+        <ul>
+            <li>Toca <b>Anotar Leche</b> en el dashboard</li>
+            <li>Ingresa el numero de arete de la vaca</li>
+            <li>Ingresa la cantidad de litros</li>
+            <li>Selecciona el turno: Manana o Tarde</li>
+            <li>Toca <b>Guardar</b></li>
+        </ul>
+        <h3>Ver produccion del dia</h3>
+        <p>En el dashboard puedes ver el total de litros producidos hoy y los kilos de queso que se pueden obtener (1 kg de queso por cada 9 litros de leche).</p>
+        <h3>Reiniciar el contador</h3>
+        <p>Al final del dia puedes tocar <b>Reiniciar dia</b> para poner el contador en cero sin borrar los registros historicos.</p>
+        <div class="tip">La grafica muestra la produccion de los ultimos 7 dias.</div>
+    </div>
+
+    <div class="section">
+        <h2>4. Vacunas</h2>
+        <h3>Registrar una vacuna</h3>
+        <ul>
+            <li>Toca <b>Vacuna</b> en el dashboard</li>
+            <li>Ingresa el arete del animal</li>
+            <li>Escribe el nombre de la vacuna</li>
+            <li>Selecciona la fecha de aplicacion</li>
+            <li>Toca <b>Guardar</b></li>
+        </ul>
+        <p>La app calcula automaticamente la fecha del refuerzo (6 meses despues).</p>
+        <h3>Alertas de refuerzo</h3>
+        <p>Cuando llega la fecha del refuerzo aparece una alerta en el dashboard y un numero rojo en la campana. Toca la campana para ver las vacunas pendientes.</p>
+        <h3>Marcar refuerzo aplicado</h3>
+        <ul>
+            <li>Toca la campana o el aviso de alerta</li>
+            <li>Toca <b>Marcar como Aplicada</b> en la vacuna correspondiente</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. Nacimientos</h2>
+        <h3>Registrar un parto</h3>
+        <ul>
+            <li>Toca <b>Nacimiento</b> en el dashboard</li>
+            <li>Ingresa el arete de la madre</li>
+            <li>Selecciona el sexo de la cria</li>
+            <li>Selecciona la fecha de nacimiento</li>
+            <li>Toca <b>Guardar</b></li>
+        </ul>
+        <div class="tip">La cria se agrega automaticamente al inventario con el arete CRIA1-[arete madre]. Puedes editar sus datos desde el inventario.</div>
+        <div class="warning">Solo vacas y novillas pueden registrar partos.</div>
+    </div>
+
+    <div class="section">
+        <h2>6. Historial</h2>
+        <p>El historial muestra todos los registros organizados en 3 pestanas:</p>
+        <ul>
+            <li><b>Leche:</b> Produccion por vaca y fecha. Toca una tarjeta para editar los litros.</li>
+            <li><b>Partos:</b> Nacimientos agrupados por madre y fecha.</li>
+            <li><b>Vacunas:</b> Todas las vacunas aplicadas por animal.</li>
+        </ul>
+        <p>Toca el icono de basura para eliminar un registro.</p>
+    </div>
+
+    <div class="section">
+        <h2>7. Menu de Configuracion</h2>
+        <p>Toca las 3 rayitas en la esquina superior izquierda para abrir el menu:</p>
+        <ul>
+            <li><b>Color de Fondo:</b> Personaliza el color del dashboard</li>
+            <li><b>Manual de Usuario:</b> Abre este manual</li>
+            <li><b>Soporte Tecnico:</b> Abre la pagina de soporte para reportar problemas</li>
+            <li><b>Cerrar Sesion:</b> Cierra tu cuenta de forma segura</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. Exportar PDF</h2>
+        <p>Toca <b>Exportar PDF</b> en el dashboard para generar un reporte completo con la produccion de leche, vacunas aplicadas e inventario de animales. El PDF se guarda en la carpeta de Descargas de tu celular.</p>
+    </div>
+
+    <div class="section">
+        <h2>Consejos Utiles</h2>
+        <ul>
+            <li>Siempre agrega los animales al inventario primero</li>
+            <li>Registra la leche cada dia para mantener el historial actualizado</li>
+            <li>Revisa la campana de notificaciones regularmente para no perder refuerzos</li>
+            <li>Usa el historial para ver la produccion de dias anteriores</li>
+            <li>Edita los datos de las crias desde el inventario despues de registrar el parto</li>
+        </ul>
+    </div>
+
+    <p class="footer">Hato Digital v1.0 — Todos los derechos reservados</p>
+
+</body>
+</html>
